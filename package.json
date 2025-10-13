@@ -31,6 +31,9 @@
     "vue": "latest",
     "vue-router": "latest"
   },
+  "volta": {
+    "node": "22.20.0"
+  },
   "devDependencies": {
     "@iconify-json/prime": "^1.2.2"
   }

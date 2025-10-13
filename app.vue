@@ -53,6 +53,13 @@
     <NuxtPage />
 
     <CookieConsentBanner />
+    <!-- <iframe
+      id="ch8r-widget-iframe"
+      src="http://localhost:3002/widget.html?app_uuid=9de573be-1a55-4d2b-a4b9-14f9737a102b&token=lWz5jgvJHHBtJdv7xxCNw8yAH4SxQhf3vSypXfGR4M8"
+      width="88"
+      height="88"
+      style="border: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; background: transparent;"
+    ></iframe> -->
   </div>
 </template>
 
@@ -77,6 +84,9 @@ useHead({
 
 onMounted(() => {
   if (localStorage.getItem('cookie-consent')) {
+    if (['127.0.0.1', 'localhost'].includes(window.location.hostname)) {
+      return
+    }
     initialize()
     gtag('consent', 'update', {
       ad_user_data: 'granted',
@@ -85,6 +95,20 @@ onMounted(() => {
       analytics_storage: 'granted',
     })
   }
+
+  // window.addEventListener("message", (event) => {
+  //   if (event.data?.type === "ch8r-resize") {
+  //     const iframe = document.getElementById("ch8r-widget-iframe");
+  //     if (iframe && event.data.height) {
+  //       iframe.style.height = `${event.data.height}px`;
+  //       if (event.data.height > 100) {
+  //         iframe.style.width = "360px";
+  //       } else {
+  //         iframe.style.width = "88px";
+  //       }
+  //     }
+  //   }
+  // });
 })
 
 const navigation = [

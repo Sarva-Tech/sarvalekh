@@ -13,9 +13,9 @@
       </div>
 
       <div class="flex space-x-2 pt-1">
-        <h1 class="text-sm text-gray-600 leading-relaxed">
+        <div class="text-sm text-gray-600 leading-relaxed">
           {{ author.name }}
-        </h1>
+        </div>
         <NuxtLink
           v-if="author.links.github"
           :to="author.links.github"
