@@ -52,7 +52,7 @@
     <NuxtLoadingIndicator />
     <NuxtPage />
 
-    <CookieConsentBanner />
+    <!--    <CookieConsentBanner />-->
     <!-- <iframe
       id="ch8r-widget-iframe"
       src="http://localhost:3002/widget.html?app_uuid=9de573be-1a55-4d2b-a4b9-14f9737a102b&token=lWz5jgvJHHBtJdv7xxCNw8yAH4SxQhf3vSypXfGR4M8"
@@ -83,7 +83,7 @@ useHead({
 })
 
 onMounted(() => {
-  if (localStorage.getItem('cookie-consent')) {
+  // if (localStorage.getItem('cookie-consent')) {
     if (['127.0.0.1', 'localhost'].includes(window.location.hostname)) {
       return
     }
@@ -94,7 +94,7 @@ onMounted(() => {
       ad_storage: 'granted',
       analytics_storage: 'granted',
     })
-  }
+  // }
 
   // window.addEventListener("message", (event) => {
   //   if (event.data?.type === "ch8r-resize") {
