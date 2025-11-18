@@ -33,3 +33,9 @@ network impacted large amounts of traffic that rely on us. The sites, businesses
 The apologetic and regretful tweet clearly shows Dane’s seriousness and sense of accountability.
 
 Such outages impact millions of users, ranging from individuals to businesses. At times, such situations are unavoidable, and what’s important is how we handle these tough periods and our willingness to fix the underlying issues.
+
+Dane further said that the team was able to resolve the issue, which was their first priority, and are now monitoring the services to ensure everything is fully operational. They also plan to share a complete walkthrough of what went wrong.
+
+That's all for this blog. Stay tuned, and we'll come back with another blog featuring an in-depth analysis of what caused the incident at Cloudflare.
+
+Note: This blog has been deployed using Cloudflare Pages. ;)
