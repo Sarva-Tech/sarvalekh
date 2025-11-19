@@ -25,9 +25,9 @@ Dane writes:
 > I won’t mince words: earlier today we failed our customers and the broader Internet when a problem in 
 @Cloudflare
 network impacted large amounts of traffic that rely on us. The sites, businesses, and organizations that rely on Cloudflare depend on us being available and I apologize for the impact that we caused.
-
+>
 > Transparency about what happened matters, and we plan to share a breakdown with more details in a few hours. In short, a latent bug in a service underpinning our bot mitigation capability started to crash after a routine configuration change we made. That cascaded into a broad degradation to our network and other services. This was not an attack.
-
+>
 > That issue, impact it caused, and time to resolution is unacceptable. Work is already underway to make sure it does not happen again, but I know it caused real pain today. The trust our customers place in us is what we value the most and we are going to do what it takes to earn that back.
 
 The apologetic and regretful tweet clearly shows Dane’s seriousness and sense of accountability.
@@ -39,3 +39,9 @@ Dane further said that the team was able to resolve the issue, which was their f
 That's all for this blog. Stay tuned, and we'll come back with another blog featuring an in-depth analysis of what caused the incident at Cloudflare.
 
 Note: This blog has been deployed using Cloudflare Pages. ;)
+
+[UPDATE: 20th Nov - 2025]
+
+The Cloudflare team released a blog explaining the cause of the issue. Read their in-depth article on the [Cloudflare outage](https://blog.cloudflare.com/18-november-2025-outage/).
+
+They have confirmed that the issue was not caused by a cyber attack or any malicious activity. Instead, the outage that impacted almost 20% of the internet was caused by an oversized file, which propagated across all their machines.
