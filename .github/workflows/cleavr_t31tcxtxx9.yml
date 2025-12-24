@@ -40,6 +40,13 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Install pnpm (only if needed)
+        if: hashFiles('pnpm-lock.yaml') != ''
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+          run_install: false
+
       - uses: bahmutov/npm-install@v1
         id: npm-install
 
